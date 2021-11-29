@@ -11,7 +11,10 @@
     "start": "next start",
     "lint": "next lint",
     "format:w": "yarn prettier -w '**/*.{ts,tsx,yml,json,md}'",
-    "format:c": "yarn prettier -c '**/*.{ts,tsx,yml,json,md}'"
+    "format:c": "yarn prettier -c '**/*.{ts,tsx,yml,json,md}'",
+    "test": "jest --watch",
+    "jest": "npx jest --coverage",
+    "cypress": "npx cypress run"
   },
   "dependencies": {
     "@chakra-ui/react": "^1.7.1",
