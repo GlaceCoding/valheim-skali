@@ -14,13 +14,15 @@ const { defaultExport, StoryFactory } = storybookSetup<AccordionItemProps>(Accor
 
 export default defaultExport;
 
-const title = 'A title';
-const subtitle = '[A subtitle]';
 const children = 'Content of accordion item';
 
-export const Default = StoryFactory({ title, children });
+export const Default = StoryFactory({ title: 'A title', children });
 
-export const WithSubtitle = StoryFactory({ title, subtitle, children });
+export const WithSubtitle = StoryFactory({
+  title: 'A title 2',
+  subtitle: '[A subtitle]',
+  children,
+});
 
 export const MultipleItems = () => (
   <>

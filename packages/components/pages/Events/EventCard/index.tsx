@@ -1,15 +1,15 @@
 import React from 'react';
+import { useDisclosure } from '@chakra-ui/react';
+import { Event } from '@packages/store/events/type';
+import { ElementCategoriesProps } from '@packages/utils/types';
 import {
-  Box,
-  useDisclosure,
   Modal,
   ModalBody,
   ModalCloseButton,
   ModalContent,
   ModalOverlay,
-} from '@chakra-ui/react';
-import { Event } from '@packages/store/events/type';
-import { ElementCategoriesProps } from '@packages/utils/types';
+} from '@packages/components/core/Modal';
+import Box from '@packages/components/core/Box';
 import { EventContext, isEventClosed } from '../utils';
 import EventItem from '../EventItem';
 
