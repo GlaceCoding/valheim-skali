@@ -5,7 +5,7 @@ const Fonts = () => (
   <Global
     styles={`
       @font-face {
-        font-family: 'Norse';
+        font-family: 'Norse', Lucida Sans;
         src: url("/fonts/Norse.otf");
       }
       `}
